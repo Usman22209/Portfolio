@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#element {
+  color: rgb(236, 105, 57);
+}
+
+.animation {
+  animation-name: identifier;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+  animation-delay: 0ms;
+
+}
+
+@keyframes identifier {
+  from {}
+
+  to {
+    width: 0%;
+  }
+}
+
+.circle1 {
+  fill: none;
+  stroke-width: 10px;
+  stroke-dasharray: 345;
+  stroke-dashoffset: 345;
+  animation: anim 1s linear forwards;
+}
+
+.circle2 {
+  fill: none;
+  stroke-width: 10px;
+  stroke-dasharray: 345;
+  stroke-dashoffset: 345;
+  animation: anim2 1s linear forwards;
+}
+
+.circle3 {
+  fill: none;
+  stroke-width: 10px;
+  stroke-dasharray: 345;
+  stroke-dashoffset: 345;
+  animation: anim3 1s linear forwards;
+}
+
+.circle4 {
+  fill: none;
+  stroke-width: 10px;
+  stroke-dasharray: 345;
+  stroke-dashoffset: 345;
+  animation: anim4 1s linear forwards;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 103.5;
+  }
+}
+
+@keyframes anim2 {
+  100% {
+    stroke-dashoffset: 35;
+  }
+}
+
+@keyframes anim3 {
+  100% {
+    stroke-dashoffset: 52;
+  }
+}
+
+@keyframes anim4 {
+  100% {
+    stroke-dashoffset: 62.1;
+  }
+}
+
+.contain {
+  background-size: cover;
+  background-position: center;
+  transition: all 1s linear;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(28, 34, 30);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(23, 27, 24);
+  ;
+}
+
+.ln {
+  position: relative;
+  animation: moving 0.7s forwards;
+}
+
+@keyframes moving {
+  from {
+    left: -170px;
+  }
+
+  to {
+    left: 0px;
+  }
+}
+@keyframes move {
+  from {
+    right: -170px;
+  }
+
+  to {
+    right: 0px;
+  }
+}
+
+.rn {
+  position: relative;
+  animation: move 0.7s forwards;
+}
+.bn{
+  position: relative;
+  animation: mov 0.7s forwards;
+}
+@keyframes mov {
+  from{
+    bottom: -200px;
+  }
+  to{
+    bottom: 0px;
+  }
+}
+.nav{
+  position: relative;
+  animation: nav 0.7s forwards;
+}
+@keyframes nav {
+  0%{
+    top: -100px;
+  }
+  60%{
+    top: 15px;
+  }
+  100%{
+    top: 0px;
+  }
+}
